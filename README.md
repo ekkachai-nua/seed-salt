@@ -1,7 +1,9 @@
 # seed-salt :salt:
-Keep your seed phase safe
+After generated mnemonic phase, we all have worried about how to keep it safe and not lose it in the same time.
+This function can add complexity to your original seed phase with hash of your password, so even this **salted seed** get by anyone they can't get your original seed without your password.
 
-## How to use (Salt)
+
+## How to use (Salt) :lock:
 ```
 const {salt} = require("./helper");
 
@@ -15,7 +17,7 @@ let pwd = "P@1sw9rd";
 console.log(salt(seed, pwd));
 ```
 
-## How to use (Unsalt)
+## How to use (Unsalt) :unlock:
 ```
 const {unsalt} = require("./helper");
 
@@ -31,7 +33,7 @@ console.log(unsalt(saltedSeed, pwd));
 
 ---
 
-### Steps
+### This is how we made it 👷‍♂️
 - Convert your seed word into index (1-2048)
 - SHA256 your password
 - Combine hashed password with your seed index
