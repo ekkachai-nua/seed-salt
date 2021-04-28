@@ -1,4 +1,4 @@
-# seed-salt
+# seed-salt :salt:
 Keep your seed phase safe
 
 ## How to use (Salt)
@@ -27,7 +27,9 @@ let pwd = "P@1sw9rd";
 
 // Now you can keep your salted seed safe
 console.log(unsalt(saltedSeed, pwd));
-``
+```
+
+---
 
 ### Steps
 - Convert your seed word into index (1-2048)
